@@ -33,10 +33,7 @@ deno add jsr:@evex/discord-webhook-queue
 ### Node.js (npm)
 
 ```bash
-npm install @evex/discord-webhook-queue
-
-# If using TypeScript, you may also need:
-npm install --save-dev @types/node
+npx jsr add @evex/discord-webhook-queue
 ```
 
 ### URL imports (Deno)
