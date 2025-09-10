@@ -14,12 +14,10 @@ This library is designed with a specific goal: **handle Discord 429 rate limits 
 ## Features
 
 - ✅ **429-focused**: Specifically designed to handle Discord rate limits
-- ✅ **Sequential processing**: One message at a time with 500ms intervals
-- ✅ **Pluggable persistence**: Choose how to store your queue (memory, file, database)
 - ✅ **Crash recovery**: Messages survive application restarts
 - ✅ **TypeScript support**: Full type definitions included
 - ✅ **Cross-platform**: Works with both Deno and Node.js
-- ✅ **Zero runtime dependencies**: Uses built-in APIs (node:fs for file operations)
+- ✅ **Zero runtime dependnecies**: Uses built-in APIs (`node:fs` for file operations)
 - ✅ **JSR compatible**: Easy installation and distribution
 
 ## Installation
@@ -255,38 +253,6 @@ new WebhookQueue(webhookUrl: string, options?: QueueOptions)
 
 - [Deno](https://deno.land/) 2.0 or later, OR
 - [Node.js](https://nodejs.org/) 18.0 or later
-
-### Commands
-
-### Deno
-
-```bash
-# Run examples
-deno run --allow-net example.ts
-deno run --allow-net --allow-read --allow-write examples/file-adapter.ts
-deno run --allow-net --allow-read --allow-write examples/custom-adapter.ts
-
-# Format code
-deno fmt
-
-# Lint code
-deno lint
-
-# Type check
-deno check mod.ts
-```
-
-### Node.js
-
-```bash
-# Run examples (after npm install)
-node example.js
-node examples/file-adapter.js
-node examples/custom-adapter.js
-
-# Type check (if using TypeScript)
-npx tsc --noEmit
-```
 
 ## License
 
