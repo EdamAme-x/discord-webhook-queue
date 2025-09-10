@@ -1,0 +1,13 @@
+{
+  "name": "@evex/discord-webhook-queue",
+  "version": "0.1.0",
+  "exports": "./mod.ts",
+  "publish": {
+    "exclude": [
+      ".git",
+      ".devcontainer",
+      "*.test.ts",
+      "test/"
+    ]
+  }
+}
